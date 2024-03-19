@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e88f8aa628ee64f800fd1b3963a729b7"
+name = "discountv4"
+application_url = "https://bool-commerce-sizes-referenced.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "zingbbt.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_discounts,write_products"
+
+[auth]
+redirect_urls = [
+  "https://bool-commerce-sizes-referenced.trycloudflare.com/auth/callback",
+  "https://bool-commerce-sizes-referenced.trycloudflare.com/auth/shopify/callback",
+  "https://bool-commerce-sizes-referenced.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
